@@ -2,62 +2,102 @@
 const TOTAL = 19;
 
 const SCENES = [
-  // 1
-  { title: "Chapter I — The Letter",  text: "Reem receives her Hogwarts letter.", sub: "An invitation to the School of Witchcraft & Wizardry… and a life about to change forever.", fx: "none" },
 
-  // 2
-  { title: "Chapter II — Platform 9¾", text: "Bags packed. Heart racing.", sub: "Platform 9¾ waits… and the Hogwarts Express is about to take her away.", fx: "steam" },
+  { title: "Chapter I — The Letter",
+    text: "Reem receives her Hogwarts letter.",
+    sub: "An invitation to the School of Wizardry… and a destiny awakening.",
+    fx: "none" },
 
-  // 3
-  { title: "Chapter III — The Castle", text: "First sight of Hogwarts.", sub: "The School of Wizardry rises like a dream made real.", fx: "mist" },
+  { title: "Chapter II — Platform 9¾",
+    text: "Bags packed. Heart racing.",
+    sub: "She steps toward the Hogwarts Express… and toward her future.",
+    fx: "steam" },
 
-  // 4
-  { title: "Chapter IV — The Sorting", text: "The Great Hall holds its breath.", sub: "The Sorting Hat decides where Reem truly belongs.", fx: "candle" },
+  { title: "Chapter III — The Castle",
+    text: "Her first sight of Hogwarts.",
+    sub: "The School of Wizardry stands before her — magnificent.",
+    fx: "mist" },
 
-  // 5
-  { title: "Chapter V — Gryffindor!", text: "BETTER BE, GRYFFINDOR!", sub: "Courage, loyalty… and a heart that never backs down.", fx: "spark" },
+  { title: "Chapter IV — The Sorting Ceremony",
+    text: "The Great Hall falls silent.",
+    sub: "The Sorting Hat prepares to decide Reem’s fate.",
+    fx: "candle" },
 
-  // 6
-  { title: "Chapter VI — Common Room", text: "A new home inside the castle.", sub: "Firelight, laughter, and the feeling of belonging.", fx: "ember" },
+  { title: "Chapter V — Gryffindor!",
+    text: "The Hat shouts: GRYFFINDOR!",
+    sub: "Courage. Fire. Strength.",
+    fx: "spark" },
 
-  // 7
-  { title: "Chapter VII — The Duel", text: "Dark Arts class turns competitive.", sub: "Reem faces a Ravenclaw student in a duel… sparks fly.", fx: "spark" },
+  { title: "Chapter VI — The Common Room",
+    text: "Reem finds her new home.",
+    sub: "Warm firelight and new friendships begin.",
+    fx: "ember" },
 
-  // 8
-  { title: "Chapter VIII — Eyes On You", text: "The whole class watches.", sub: "Two wands, one moment—like a scene from a movie.", fx: "spark" },
+  { title: "Chapter VII — The Duel",
+    text: "Defense Against the Dark Arts.",
+    sub: "Reem faces a Ravenclaw student — Hamad.",
+    fx: "spark" },
 
-  // 9
-  { title: "Chapter IX — Friendly Again", text: "They meet again… differently.", sub: "This time it’s a friendly class—talking, laughing, getting to know each other.", fx: "candle" },
+  { title: "Chapter VIII — Sparks Fly",
+    text: "Wands collide.",
+    sub: "A duel that neither of them would forget.",
+    fx: "spark" },
 
-  // 10
-  { title: "Chapter X — Feelings", text: "Something changes between them.", sub: "A look that lasts too long… a smile that says too much.", fx: "candle" },
+  { title: "Chapter IX — A Friendly Encounter",
+    text: "They meet again.",
+    sub: "This time not as rivals… but as classmates.",
+    fx: "candle" },
 
-  // 11 (question popup triggers here)
-  { title: "Chapter XI — Valentine", text: "He writes it in the snow:", sub: "“Will you be my valentine?”", fx: "snow", ask: true },
+  { title: "Chapter X — Something Changes",
+    text: "Reem and Hamad begin to talk more.",
+    sub: "Laughter. Long glances. A spark far stronger than magic.",
+    fx: "candle" },
 
-  // 12
-  { title: "Chapter XII — Valentine Date", text: "She said yes.", sub: "A magical date—riding a griffin together, the castle glowing in winter light.", fx: "snow" },
+  { title: "Chapter XI — The Question",
+    text: "Hamad writes in the snow:",
+    sub: "“Reem, will you be my Valentine?”",
+    fx: "snow",
+    ask: true },
 
-  // 13
-  { title: "Chapter XIII — The Bet", text: "A bet in the skies.", sub: "Who catches the golden snitch first? Reem wins—fair and fearless.", fx: "wind" },
+  { title: "Chapter XII — A Magical Date",
+    text: "She said yes.",
+    sub: "Hamad and Reem ride a griffin under a winter sky.",
+    fx: "snow" },
 
-  // 14
-  { title: "Chapter XIV — Representing the School", text: "Champions of the academy.", sub: "They compete against rival teams—wearing their colors with pride.", fx: "wind" },
+  { title: "Chapter XIII — The Bet",
+    text: "A race through the sky.",
+    sub: "Who will catch the golden snitch first? Reem wins.",
+    fx: "wind" },
 
-  // 15
-  { title: "Chapter XV — Forbidden Forest", text: "Where memories turn legendary.", sub: "Through the shadows of the forest… together.", fx: "mist" },
+  { title: "Chapter XIV — Champions",
+    text: "They represent Hogwarts together.",
+    sub: "Side by side against rival teams.",
+    fx: "wind" },
 
-  // 16
-  { title: "Chapter XVI — Classes & Memories", text: "Days filled with magic.", sub: "Herbology. Defense. Potions. Spells—moments that became their story.", fx: "spark" },
+  { title: "Chapter XV — Forbidden Forest",
+    text: "Whispers in the shadows.",
+    sub: "Adventures only legends would survive.",
+    fx: "mist" },
 
-  // 17
-  { title: "Chapter XVII — The Dark Lord", text: "The final battle begins.", sub: "A dark lord rises… and they stand together to end it.", fx: "storm" },
+  { title: "Chapter XVI — Memories",
+    text: "Classes. Magic. Growth.",
+    sub: "Moments that shaped Hamad and Reem.",
+    fx: "spark" },
 
-  // 18
-  { title: "Chapter XVIII — The Wedding", text: "A promise inside the academy.", sub: "After the storm, after the legend—love wins.", fx: "gold" },
+  { title: "Chapter XVII — The Dark Lord",
+    text: "The final battle begins.",
+    sub: "Hamad and Reem stand together to defeat the darkness.",
+    fx: "storm" },
 
-  // 19
-  { title: "Chapter XIX — Happily Ever After", text: "And they lived happily ever after.", sub: "Not just a story… a forever.", fx: "candle" },
+  { title: "Chapter XVIII — The Wedding",
+    text: "Hamad & Reem.",
+    sub: "Years later, inside the academy where it all began, they vow forever.",
+    fx: "gold" },
+
+  { title: "Chapter XIX — Happily Ever After",
+    text: "The Legend of Hamad and Reem.",
+    sub: "The two who saved the academy… and chose each other.",
+    fx: "candle" }
 ];
 
 // Images are in repo root as 1.PNG ... 19.PNG
