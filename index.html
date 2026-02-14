@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>26 — Our Magical Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="app">
+    <div class="bg" id="bgA"></div>
+    <div class="bg" id="bgB"></div>
+
+    <div class="vignette"></div>
+    <canvas id="fx"></canvas>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="sigil">26</span>
+        <span class="title">Our Magical Story</span>
+      </div>
+      <div class="actions">
+        <button id="btnMusic" class="iconBtn" aria-label="Toggle music">♪</button>
+        <button id="btnInfo" class="iconBtn" aria-label="Info">i</button>
+      </div>
+    </header>
+
+    <main class="stage" role="main">
+      <div class="captionWrap">
+        <div class="chapter" id="chapter">Chapter I</div>
+        <div class="caption" id="caption"></div>
+        <div class="sub" id="sub"></div>
+      </div>
+
+      <div class="hud">
+        <button id="prev" class="navBtn" aria-label="Previous">‹</button>
+        <div class="progress">
+          <div class="dots" id="dots"></div>
+          <div class="counter"><span id="idx">1</span> / <span id="total">19</span></div>
+        </div>
+        <button id="next" class="navBtn" aria-label="Next">›</button>
+      </div>
+    </main>
+
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="card">
+        <h2>How to use</h2>
+        <p>Swipe left/right or use the arrows. Tap a dot to jump to a scene.</p>
+        <p>Music button is optional (add <code>music.mp3</code> to repo root if you want).</p>
+        <button id="closeModal" class="primary">Close</button>
+      </div>
+    </div>
+
+    <audio id="music" preload="auto"></audio>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
